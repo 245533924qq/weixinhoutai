@@ -19,11 +19,11 @@
 		<property name="dataSource" ref="dataSource"/>
 		<property name="configLocation" value="classpath:config/mybatis-config.xml"/>
 		<property name="mapperLocations" value="classpath:com/mapper/*.xml"/>
-		<property name="typeAliasesPackage" value="com.zr.entity"/>
+		<property name="typeAliasesPackage" value="com.entity"/>
 	</bean>
 	
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.zr.mapper"/>
+		<property name="basePackage" value="com.mapper"/>
 		<property name="sqlSessionFactory" ref="sqlSessionFactory"/>
 	</bean>
 
